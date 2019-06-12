@@ -41,7 +41,7 @@ jobs:
         targetPath: 'ShoppingServiceArtifact.zip'
 - deployment: DeployJob
   dependsOn: BuildAndPublishArtifact
-  displayName: Deploy to Production Job
+  displayName: Deploy to Staging Job
   pool:
     vmImage: 'ubuntu-16.04'
   environment: production
